@@ -8,3 +8,7 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 <?php
 
 require __DIR__ . '/Database/db.php';
+
+include_once __DIR__ . '/Views/head.php';
+include_once __DIR__ . '/Views/body.php';
+include_once __DIR__ . '/Views/footer.php';

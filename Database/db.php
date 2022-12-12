@@ -13,7 +13,7 @@ $food_products = [
   new Food(0004, 'HFC', 'Almo Nature', 8.98, 1.2, 'pollo fresco, piselli, polpa di barbabietola ', 'pollo', new Category('Gatto')),
 ];
 
-var_dump($food_products);
+// var_dump($food_products);
 
 $toy_products = [
   new Toy(1001, 'Osso Grosso', 'PlayDog',  8.29, 'masticazione', 'M', new Category('Cane')),
@@ -22,7 +22,7 @@ $toy_products = [
   new Toy(1004, 'Turning Feather', 'Trixie', 15.29, 'stimolazione', '/', new Category('Gatto') ),
 ];
 
-var_dump($toy_products);
+// var_dump($toy_products);
 
 $accessory_products = [
   new Accessory(3001, 'Collare', 'Trixie', 9.99, 'nylon', 'S', new Category('Gatto') ),
@@ -31,4 +31,4 @@ $accessory_products = [
   new Accessory(3001, 'Cuscino Be Nordic', 'Trixie', 80.99, 'poliestere, cotone', '/', new Category('Cane') ),
 ];
 
-var_dump($accessory_products);
+// var_dump($accessory_products);
