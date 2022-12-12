@@ -5,13 +5,15 @@ class Food extends Product
   public $weight;
   public $ingredients;
   public $taste;
+  public $category;
 
-  public function __construct($_id, Category $_category, $_type, $_brand, $_name, $_cost, $_image, $_isAvailable, $_weight, $_ingredients, $_taste)
+  public function __construct($_id, $_name, $_brand, $_price, $_weight, $_ingredients, $_taste, Category $_category)
   {
-    parent::__construct($_id, $_category, $_type, $_brand, $_name, $_cost, $_image, $_isAvailable);
+    parent::__construct($_id, $_name, $_brand, $_price);
 
     $this->weight = $_weight;
     $this->ingredients = $_ingredients;
     $this->taste = $_taste;
+    $this->category = $_category;
   }
 }
