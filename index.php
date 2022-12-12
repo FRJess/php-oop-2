@@ -10,6 +10,14 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 require __DIR__ . '/Models/Product.php';
 require __DIR__ . '/Models/Category.php';
 require __DIR__ . '/Models/Food.php';
+require __DIR__ . '/Models/Toy.php';
+require __DIR__ . '/Models/Accessory.php';
 
-$yumyum = new Product('1234', new Category('cani'), 'cibo', 'Trainer', 'Natural', 20, 'null', true);
-var_dump($yumyum);
+$natural = new Product('1234', new Category('cani'), 'cibo', 'Trainer', 'Natural', 20, 'null', true);
+var_dump($natural);
+
+$ossogrosso = new Product('2222', new Category('cani'), 'gioccatolo', 'PlayDog', 'Osso Grosso', 8, 'null', true);
+var_dump($ossogrosso);
+
+$colcat = new Product('020202', new Category('gatti'), 'collare', 'Trixie', 'ColCat', 9.9, 'null', true);
+var_dump($colcat);
