@@ -9,8 +9,14 @@ h6 {
   font-size: 0.6rem;
 }
 
+.jt-container {
+  min-width: 80%;
+  margin: 0 auto;
+}
+
 /* CARDS */
 .jt-card {
   /* background-color: #112030; */
   cursor: pointer;
+  min-width: calc(100%/4);
 }
