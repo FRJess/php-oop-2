@@ -12,6 +12,6 @@ class Food extends Product
 
     $this->weight = $_weight;
     $this->ingredients = $_ingredients;
-    $this->_taste = $_taste;
+    $this->taste = $_taste;
   }
 }
