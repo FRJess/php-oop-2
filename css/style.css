@@ -1,0 +1,16 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h6 {
+  font-size: 0.6rem;
+}
+
+/* CARDS */
+.jt-card {
+  /* background-color: #112030; */
+  cursor: pointer;
+}

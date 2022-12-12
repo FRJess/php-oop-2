@@ -9,6 +9,7 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 
 require __DIR__ . '/Database/db.php';
 
-include_once __DIR__ . '/Views/head.php';
-include_once __DIR__ . '/Views/body.php';
-include_once __DIR__ . '/Views/footer.php';
+include __DIR__ . '/Views/layout/head.php';
+include __DIR__ . '/Views/layout/header.php';
+include __DIR__ . '/Views/partials/product.php';
+include __DIR__ . '/Views/layout/footer.php';
