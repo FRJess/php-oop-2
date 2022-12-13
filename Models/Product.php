@@ -11,6 +11,7 @@ class Product{
   public $isAvailable;
   public $quantity;
   public $category;
+  protected $discount = 0;
 
   public function __construct($_id, String $_name, $_brand, Float $_price, String $_image, Category $_category, Bool $_isAvailable, Int $_quantity)
   {
@@ -22,8 +23,26 @@ class Product{
     $this->isAvailable = $_isAvailable;
     $this->quantity = $_quantity;
     $this->category = $_category;
-    // $this->image = $_image;
-    // $this->isAvailable = $_isAvailable;
+  }
+
+  public function setDiscount(Int $_discount){
+    if($_discount < 1 && $_discount > 99){
+      //gestiremo l'errore
+      $this->discount = 0;
+    }else{
+      $this->discount = $_discount;
+    }
+  }
+
+  public function getDiscount(){
+    return $this->discount;
+  }
+
+  public function getFinalPrice(){
+    if($this->discount === 0){
+      return $this->price;
+    }
+    return $this->price *= (1 - ($this->discount/100));
   }
 
 }
