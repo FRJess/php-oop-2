@@ -11,7 +11,6 @@ $categories = [
   'gatto' => new Category('Gatto','<i class="fa-solid fa-cat"></i>'),
   'pesce' => new Category('Pesce','<i class="fa-solid fa-fish"></i>'),
   'ucello' => new Category('Ucello','<i class="fa-solid fa-dove"></i>'),
-
 ];
 
 $food_products = [
@@ -33,10 +32,10 @@ $toy_products = [
 // var_dump($toy_products);
 
 $accessory_products = [
-  new Accessory(2001, 'Collare', 'Trixie', 9.99, 'https://shop-cdn-m.mediazs.com/bilder/collare/per/gatti/my/home/5/400/icon_topseller_1_2021_12_23t163010_904_5.jpg', $categories['gatto'], false, 0, 'nylon', 'S' ),
-  new Accessory(2001, 'Ciotola', 'Savic', 5.49, 'https://shop-cdn-m.mediazs.com/bilder/doppia/ciotola/savic/delice/double/marble/7/400/252331_pla_savic_futternapf_delice_doublemarble_hs_01_7.jpg', $categories['gatto'], false, 0, 'plastica', '200ml' ),
-  new Accessory(2001, 'Pettorina', 'Julius', 39.99, 'https://shop-cdn-m.mediazs.com/bilder/pettorina/juliusk/power/antracite/8/400/69285_pla_julius_k9_powergeschirr_anthrazit_hs_01_8.jpg', $categories['cane'], false, 0, 'poliestere, cotone', 'M'),
-  new Accessory(2001, 'Cuscino Be Nordic', 'Trixie', 80.99, 'https://shop-cdn-m.mediazs.com/bilder/cuscino/per/cani/trixie/fhr/be/nordic/0/400/211498_211499_pla_trixie_benordic_kissen_foehr_hs_01_0.jpg', $categories['cane'], false, 0, 'poliestere, cotone', '/'),
+  new Accessory(2001, 'Collare', 'Trixie', 9.99, 'https://shop-cdn-m.mediazs.com/bilder/collare/per/gatti/my/home/5/400/icon_topseller_1_2021_12_23t163010_904_5.jpg', $categories['gatto'], true, 20, 'nylon', 'S' ),
+  new Accessory(2001, 'Ciotola', 'Savic', 5.49, 'https://shop-cdn-m.mediazs.com/bilder/doppia/ciotola/savic/delice/double/marble/7/400/252331_pla_savic_futternapf_delice_doublemarble_hs_01_7.jpg', $categories['gatto'], true, 14, 'plastica', '200ml' ),
+  new Accessory(2001, 'Pettorina', 'Julius', 39.99, 'https://shop-cdn-m.mediazs.com/bilder/pettorina/juliusk/power/antracite/8/400/69285_pla_julius_k9_powergeschirr_anthrazit_hs_01_8.jpg', $categories['cane'], true, 4, 'poliestere, cotone', 'M'),
+  new Accessory(2001, 'Cuscino Be Nordic', 'Trixie', 80.99, 'https://shop-cdn-m.mediazs.com/bilder/cuscino/per/cani/trixie/fhr/be/nordic/0/400/211498_211499_pla_trixie_benordic_kissen_foehr_hs_01_0.jpg', $categories['cane'], true, 1, 'poliestere, cotone', '/'),
 ];
 
 // var_dump($accessory_products);
