@@ -1,12 +1,9 @@
 <?php
 //var_dump($movies);
 ?>
-
-<body>
-  
   <main>
     
-    <h3>Gioccatoli</h3>
+    <h3>Alimenti</h3>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -25,9 +22,39 @@
             <td><?php echo $item->name . ' (' . $item->brand . ')' ?></td>
             <td>
               <?php if($item->getDiscount() > 0): ?>
-                <p class="text-decoration-line-through"><?php echo $item->price ?></p>
+                <p class="text-decoration-line-through"><?php echo $item->price ?>€</p>
               <?php endif; ?>
-                <?php echo $item->getFinalPriceFormat() ?>
+                <?php echo $item->getFinalPriceFormat() ?>€
+            </td>
+            <td><img src="<?php echo $item->image ?>" alt="<?php echo $item->name ?>" title="<?php echo $item->name ?>"></td>
+          </tr>
+          <?php endforeach; ?>
+      </tbody>
+    
+    </table>
+
+    <h3>Gioccatoli</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Prezzo</th>
+          <th scope="col">Immagine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach($toy as $item): ?>
+          <tr>
+            <td><?php echo $item->id ?></td>
+            <td><?php echo $item->category->icon ?></td>
+            <td><?php echo $item->name . ' (' . $product->brand . ')' ?></td>
+            <td>
+              <?php if($item->getDiscount() > 0): ?>
+                <p class="text-decoration-line-through"><?php echo $item->price ?>€</p>
+              <?php endif; ?>
+                <?php echo $item->getFinalPriceFormat() ?>€
             </td>
             <td><img src="<?php echo $item->image ?>" alt="<?php echo $item->name ?>"></td>
           </tr>
@@ -48,36 +75,6 @@
         </tr>
       </thead>
       <tbody>
-        <?php foreach($toy as $item): ?>
-          <tr>
-            <td><?php echo $item->id ?></td>
-            <td><?php echo $item->category->icon ?></td>
-            <td><?php echo $item->name . ' (' . $product->brand . ')' ?></td>
-            <td>
-              <?php if($item->getDiscount() > 0): ?>
-                <p class="text-decoration-line-trough"><?php echo $item->price ?></p>
-              <?php endif; ?>
-                <?php echo $item->getFinalPriceFormat() ?>
-            </td>
-            <td><img src="<?php echo $item->image ?>" alt="<?php echo $item->name ?>"></td>
-          </tr>
-          <?php endforeach; ?>
-      </tbody>
-    
-    </table>
-
-    <h3>Alimenti</h3>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Categoria</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Prezzo</th>
-          <th scope="col">Immagine</th>
-        </tr>
-      </thead>
-      <tbody>
         <?php foreach($accessory as $item): ?>
           <tr>
             <td><?php echo $item->id ?></td>
@@ -85,9 +82,9 @@
             <td><?php echo $item->name . ' (' . $product->brand . ')' ?></td>
             <td>
               <?php if($item->getDiscount() > 0): ?>
-                <p class="text-decoration-line-trough"><?php echo $item->price ?></p>
+                <p class="text-decoration-line-through"><?php echo $item->price ?>€</p>
               <?php endif; ?>
-                <?php echo $item->getFinalPriceFormat() ?>
+                <?php echo $item->getFinalPriceFormat() ?>€
             </td>
             <td><img src="<?php echo $item->image ?>" alt="<?php echo $item->name ?>"></td>
           </tr>
@@ -97,5 +94,3 @@
     </table>
 
   </main>
-
-</body>

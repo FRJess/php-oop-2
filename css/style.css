@@ -5,22 +5,10 @@
   box-sizing: border-box;
 }
 
-h6 {
-  font-size: 0.6rem;
-}
-
 img {
-  max-height: 10px;
+  max-width: 10px;
 }
 
-.jt-container {
-  min-width: 80%;
-  margin: 0 auto;
-}
-
-/* CARDS */
-.jt-card {
-  /* background-color: #112030; */
-  cursor: pointer;
-  min-width: calc(100%/4);
+table {
+  background-color: blue;
 }

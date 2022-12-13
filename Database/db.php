@@ -23,5 +23,22 @@ $products = [
 ];
 
 foreach ($products as $product){
-  $product->setDiscount(20);
+  $product->setDiscount(0);
 }
+
+$products[0]->setDiscount(20);
+$products[1]->setDiscount(2);
+$products[3]->setDiscount(5);
+$products[4]->setDiscount(1);
+
+$users = [
+  new User('Ilaria', 'Rossi', 40),
+  new User('Jessica', 'Verde', 30),
+  new User('Fabio', 'Bianchi', 70),
+];
+
+$orders = [
+  new Order($users[0], [$products[0],$products[3],$products[7]], date('d/m/Y')),
+  new Order($users[1], [$products[1],$products[2],$products[6]], date('d/m/Y')),
+  // new Order($users[2], [$products[3],$products[6],$products[7]], date('d/m/Y')),
+];
