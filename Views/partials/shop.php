@@ -1,5 +1,5 @@
 <?php
-//var_dump($movies);
+// var_dump($products);
 ?>
   <main>
     

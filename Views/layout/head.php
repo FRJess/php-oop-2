@@ -24,7 +24,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Il mio negozio per animali</title>
 </head>
