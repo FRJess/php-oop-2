@@ -26,6 +26,12 @@ foreach ($products as $product){
   $product->setDiscount(0);
 }
 
+try{
+  $products[0]->setDiscount(110);
+}catch(Exception $e){
+  echo $e->getMessage();
+}
+
 $products[0]->setDiscount(20);
 $products[1]->setDiscount(2);
 $products[3]->setDiscount(5);
@@ -34,8 +40,14 @@ $products[4]->setDiscount(1);
 $users = [
   new User('Ilaria', 'Rossi', 40),
   new User('Jessica', 'Verde', 30),
-  new User('Fabio', 'Bianchi', 70),
+  new User('Fabio', 'Bianchi', 70)
 ];
+
+$users[0]->street = 'Via dei Platani';
+$users[0]->street_number = '10';
+$users[0]->city = 'Roma';
+$users[0]->zip = '00175';
+$users[0]->country = 'Italia';
 
 $orders = [
   new Order($users[0], [$products[0],$products[3],$products[7]], date('d/m/Y')),

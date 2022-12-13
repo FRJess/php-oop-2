@@ -27,10 +27,11 @@ class Order{
  }
 
  private function setAmount(){
+  $this->amount = 0;
   foreach ($this->products as $product){
     $this->amount += $product->getFinalPrice();
   }
-  $this->final_amount = $this->amount *= (1 - $this->user->getDiscount() / 100);
+  $this->final_amount = $this->amount * (1 - $this->user->getDiscount() / 100);
  }
 
  public function getAmount(){

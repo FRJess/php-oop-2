@@ -11,7 +11,7 @@
           <th scope="col">Categoria</th>
           <th scope="col">Nome</th>
           <th scope="col">Prezzo</th>
-          <th scope="col">Immagine</th>
+          <th scope="col">Immagine del prodotto</th>
         </tr>
       </thead>
       <tbody>
@@ -41,7 +41,7 @@
           <th scope="col">Categoria</th>
           <th scope="col">Nome</th>
           <th scope="col">Prezzo</th>
-          <th scope="col">Immagine</th>
+          <th scope="col">Immagine del prodotto</th>
         </tr>
       </thead>
       <tbody>
@@ -71,7 +71,7 @@
           <th scope="col">Categoria</th>
           <th scope="col">Nome</th>
           <th scope="col">Prezzo</th>
-          <th scope="col">Immagine</th>
+          <th scope="col">Immagine del prodotto</th>
         </tr>
       </thead>
       <tbody>

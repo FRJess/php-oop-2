@@ -27,7 +27,8 @@ class Product{
 
   public function setDiscount(Int $_discount){
     if($_discount < 1 && $_discount > 99){
-      //gestiremo l'errore
+      
+      throw new Exception('Errore! Il numero deve essere fra 0 e 100');
       $this->discount = 0;
     }else{
       $this->discount = $_discount;
